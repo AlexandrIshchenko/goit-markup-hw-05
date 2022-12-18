@@ -47,7 +47,7 @@
         <div class="container-secrion_hero">
             <h1 class="hero-title">effective solutions for your business</h1>
 
-            <button type="button" class="btn primary button">order service</button>
+            <button type="button" class="btn primary button" data-modal-open>order service</button>
         </div>
       </section>
 
@@ -417,5 +417,17 @@
         </div>
       </div>
     </footer>
+
+    <!--Modal window hero-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-modal_close" data-modal-close>
+          <svg class="svg-modal_close">
+            <use class="test" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
