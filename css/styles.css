@@ -717,6 +717,10 @@ ul {
     bottom: 0;
     right: 0;
     background-color: rgba(46, 47, 66, 0.4);
+
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -725,14 +729,18 @@ ul {
     visibility: hidden;
 }
 
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
 .modal {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     
     width: 478px;
     height: 576px;
+    padding: 15px;
 
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -740,8 +748,9 @@ ul {
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-modal_close {
@@ -765,5 +774,4 @@ ul {
 
     width: 24px;
     height: 24px;
-    
 }
