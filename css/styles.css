@@ -94,7 +94,7 @@ ul {
     border: 1px solid var(--accent);
     border-radius: 4px;
 
-    transition-property: background-color, color;
+    transition-property: background-color, color, box-shadow, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -243,8 +243,8 @@ ul {
 
     background-image: linear-gradient(
         to right,
-        #2E2F4270,
-        #2E2F4270
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
     ),
         url(../images/people_office.jpg);
     background-repeat: no-repeat;
@@ -511,7 +511,7 @@ ul {
     justify-content: center;
     align-items: center;
 
-    transition-property: color;
+    transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
